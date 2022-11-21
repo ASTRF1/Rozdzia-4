@@ -1,4 +1,4 @@
-// Sprawdzenie czy liczba jest palindromem - Sposób 1.
+// Sprawdzenie czy liczba jest palindromem - Sposób 2.
 
 #include <iostream>
 
@@ -8,22 +8,23 @@ int main()
 {
   bool isPalindrom = true;
   string wyraz = "kajak";
-  
-  for (int b = 0, e = wyraz.size() - 1; e > b; b++, e--)
+  int b = 0;
+  int e = wyraz.size() - 1;
+
+  while (e > b)
   {
-    if (wyraz[b] != wyraz[e])
+    if (wyraz[e] != wyraz[b])
     {
-      isPalindrom = false;
+      cout << "Nie jest palindromem!";
       break;
     }
+    b++;
+    e--;
   }
-  if(isPalindrom) 
+  if (wyraz[b] == wyraz[e])
   {
-    cout << "Tak! Jest palindromem.";
+    cout << "Jest palindromem!";
   }
-  else
-  {
-    cout << "Nie! Nie jest palindromem.";
-  }
+  
   return 0;
 }
