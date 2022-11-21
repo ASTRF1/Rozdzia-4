@@ -1,3 +1,5 @@
+// Sprawdzenie czy liczba jest palindromem - Sposób 1.
+
 #include <iostream>
 
 using namespace std;
