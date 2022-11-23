@@ -4,30 +4,30 @@
 
 using namespace std;
 
+bool isPalindrom(string s)
+{
+  for (int i = 0, j = s.size(); i < j; i++, j--)
+  {
+    if (s[i] == s[j])
+    {
+      return false;
+    }
+  }
+  return true;
+}  
+
 int main() 
 {
-  bool isPalindrom = true;
-  // string wyraz = "kajak";
-  int b = 0;
-  int n = 1221; // Gdy mamy sytuacje z int'em.
-  string wyraz = to_string(n); // Konwersja typu string na typ int.
-  int e = wyraz.size() - 1;
-  // isPalindrom ? cout << "yes\n" : cout << "no\n";
-  
-  while (e > b)
+  string word = "aab aba ace aca";
+  word.size();
+  if(isPalindrom(word))
   {
-    if (wyraz[e] != wyraz[b])
-    {
-      cout << "Nie jest palindromem!";
-      break;
-    }
-    b++;
-    e--;
+    cout << "yes\n";
   }
-  if (wyraz[b] == wyraz[e])
+  else
   {
-    cout << "Jest palindromem!";
-  }
+    cout << "no\n";
+  }  
   
   return 0;
 }
