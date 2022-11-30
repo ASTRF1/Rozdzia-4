@@ -1,4 +1,4 @@
-// Sprawdzenie czy liczba jest palindromem - Sposób 2.
+// Sprawdzenie czy liczba jest palindromem - Sposób 2. 
 
 #include <iostream>
 
@@ -18,7 +18,7 @@ bool isPalindrom(string s)
 
 int main() 
 {
-  string word = "aab aba ace aca";
+  string word = "kajak";
   word.size();
   if(isPalindrom(word))
   {
