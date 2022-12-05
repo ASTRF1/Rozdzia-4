@@ -1,20 +1,15 @@
-// Napisz funkcję, która przyjmuje dwa paramtery typu float jako wynik zwraca ich iloczyn.
+- /*
+1. Pobieranie danych
+2. Przygotowanie zdania do analizy (parsowanie)
+ - zamiana małych liter na duże lub odwrotnie
+- usinięcie znaków iterpunktcyjnych 
+3. Wyodrębnienie słów
+- każde słowo kończy się spacją
+4. Sprawdzenkie czy słowo jest palindromem
+5. wypisanie palindromów
+We: Ala ma kota, a kot ma Ale
+Wy: Ala, a
+*/
 
-#include <iostream>
 
-using namespace std;
-
-void iloczyn(float a, float b)
-{
-  cout << a * b << "\n";
-}
-
-int main()
-{
-  int a = 3;
-  int b = 4;
-  iloczyn(a, b);
-  
-  return 0;
-}
 
