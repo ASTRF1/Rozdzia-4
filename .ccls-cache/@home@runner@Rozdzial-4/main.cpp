@@ -1,33 +1,20 @@
-// Sprawdzenie czy liczba jest palindromem - Sposób 2. 
+// Napisz funkcję, która przyjmuje dwa paramtery typu float jako wynik zwraca ich iloczyn.
 
 #include <iostream>
 
 using namespace std;
 
-bool isPalindrom(string s)
+void iloczyn(float a, float b)
 {
-  for (int i = 0, j = s.size(); i < j; i++, j--)
-  {
-    if (s[i] == s[j])
-    {
-      return false;
-    }
-  }
-  return true;
-}  
+  cout << a * b << "\n";
+}
 
-int main() 
+int main()
 {
-  string word = "kajak";
-  word.size();
-  if(isPalindrom(word))
-  {
-    cout << "yes\n";
-  }
-  else
-  {
-    cout << "no\n";
-  }  
+  int a = 3;
+  int b = 4;
+  iloczyn(a, b);
   
   return 0;
 }
+
