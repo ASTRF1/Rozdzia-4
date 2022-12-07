@@ -1,5 +1,6 @@
-- /*
+/*
 1. Pobieranie danych
+TODO:: napisać interakcję z użytkownikiem
 2. Przygotowanie zdania do analizy (parsowanie)
  - zamiana małych liter na duże lub odwrotnie
 - usinięcie znaków iterpunktcyjnych 
@@ -10,6 +11,3 @@
 We: Ala ma kota, a kot ma Ale
 Wy: Ala, a
 */
-
-
-
