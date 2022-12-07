@@ -17,11 +17,9 @@ Wy: Ala, a
 
 using namespace std;
 
-int main()
+string parsing(string zdanie)
 {
-  string zdanie = "Ala ma kota, a kot ma Ale.";
   string zdanie1 = "";
-
   for (int i = 0; i < zdanie.size(); i++)
   {
      if (isalnum(zdanie[i]) || isspace(zdanie[i]))
@@ -38,6 +36,18 @@ int main()
   }
   zdanie1 = zdanie1 + " ";
   // cout << zdanie1;
+  
+  return zdanie1;
+}
+
+int main()
+{
+  string zdanie = "Ala ma kota, a kot ma Ale.";
+  string zdanieParsed = parsing(zdanie);
+  // cout << zdanieParsed << endl;
+
+  return 0;
+}
 
   /* string parsing(string zdanie)
   {
@@ -47,5 +57,3 @@ int main()
   string zdanie = "Ala ma ..."
   string sentenceParsed = parsing(zdanie)
   */
-  return 0;
-}
